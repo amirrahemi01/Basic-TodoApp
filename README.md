@@ -25,7 +25,7 @@ I Make a simple "TodoApp" with React.js.
 
 ## Demo
 
-Check working <a href="https://amirrahemi-todo.netlify.app/">DEMO</a>
+Check working <a href="https://amirrahemi-todo.netlify.app/" target='blank'>DEMO</a>
 
 
 
