@@ -12,7 +12,10 @@ I Make a simple "TodoApp" with React.js.
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](https://raw.githubusercontent.com/amirrahemi01/Basic-TodoApp/main/src/ScreenShot/01.jpg)
+![App Screenshot](https://raw.githubusercontent.com/amirrahemi01/Basic-TodoApp/main/src/ScreenShot/02.jpg)
+![App Screenshot](https://raw.githubusercontent.com/amirrahemi01/Basic-TodoApp/main/src/ScreenShot/03.jpg)
+![App Screenshot](https://raw.githubusercontent.com/amirrahemi01/Basic-TodoApp/main/src/ScreenShot/04.jpg)
 
 ## Demo
 
