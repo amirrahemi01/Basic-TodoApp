@@ -22,11 +22,10 @@ I Make a simple "TodoApp" with React.js.
 
 <!-- ![App Screenshot](https://raw.githubusercontent.com/amirrahemi01/Basic-TodoApp/main/src/ScreenShot/04.jpg) -->
 
-nshot 2022-06-04 155457](https://raw.githubusercontent.com/amirrahemi01/Basic-TodoApp/main/src/ScreenShot/04.jpg)
 
 ## Demo
 
-Check working example page
+Check working <a href="https://amirrahemi-todo.netlify.app/">DEMO</a>
 
 
 
