@@ -1,0 +1,29 @@
+{
+  "short_name": "Todo App",
+  "name": "Basic ToDo App MADEBY_AMIR",
+  "icons": [
+    {
+      "src": "icon.png",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+
+  "description": "Mini And Simple ToDO App Created With REACT.JS",
+  "screenshots": [
+    {
+      "src": "/images/screenshot1.png",
+      "type": "image/png",
+      "sizes": "540x720",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/images/screenshot2.jpg",
+      "type": "image/jpg",
+      "sizes": "720x540",
+      "form_factor": "wide"
+    }
+  ]
+
+}

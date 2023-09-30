@@ -1,0 +1,505 @@
+:root {
+
+  /* Colors */
+  --primary-color: #060606;
+  --secondary-color: #fff;
+  --container: #fff;
+  --font-color: #424242;
+  --heading-color: #292922;
+  --bg-color: #E4E5EA;
+  --todo-form: #f5f5f5;
+  /* --btn-form: #FFDA02; */
+  --btn-form: #ffffff;
+  --btn-form-focus: #dadada;
+  /* --btn-add: #FFDA02; */
+  --btn-add: #ffffff;
+  --scrl-thumb: #a1a1a1;
+  --scrl-track: #f1f1f1;
+  --shadow: #00000091;
+  --completed: #b5b5b5;
+  --btn-form-todo: #f00;
+
+  --main-width: 375px;
+  --main-width-inner: 360px;
+  --bottom-addTodo: 0;
+}
+
+[data-theme="dark"] {
+  --primary-color: #fff;
+  --secondary-color: #000;
+  --container: #191933;
+  --font-color: #e1b12c;
+  --btn-add: #494971;
+  --heading-color: #292922;
+  --bg-color: #10101D;
+  --todo-form: #09090d;
+  --btn-form-focus: #7878de;
+  --btn-form: #eaeaea;
+  --scrl-thumb: #66667a;
+  --scrl-track: #24242d;
+  --shadow: #bdbdbd26;
+  --completed: #92929280;
+  --btn-form-todo: #f00;
+}
+
+/* [device="ios"] {
+  --bottom-addTodo: 0;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 16px;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in-out;
+  text-transform: capitalize;
+}
+
+body {
+  background-color: #282c34;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.App {
+  text-align: center;
+}
+
+h1 {
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+  font-size: 1.75rem;
+}
+
+.TodoWrapper {
+  background: var(--bg-color);
+  color: var(--primary-color);
+  border-radius: 16px;
+  padding: 6px 0px;
+  height: 85vh;
+  width: 100%;
+  padding: 18px 0px;
+}
+
+.Content {
+  padding: 15px;
+  overflow-y: auto;
+  border-radius: 20px;
+  height: 80vh;
+  width: var(--main-width);
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style the scrollbar */
+.Content::-webkit-scrollbar {
+  width: 7px;
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.Content::-webkit-scrollbar-thumb {
+  background-color: var(--scrl-thumb);
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.Content::-webkit-scrollbar-track {
+  background-color: var(--scrl-track);
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.Content br {
+  display: none;
+}
+
+.Todo-Container {
+  background-color: var(--container);
+  border-radius: 11px;
+  padding: 10px 16px;
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: space-between;
+}
+
+.Todo-Container p {
+  color: var(--primary-color);
+}
+
+.Todo-Container svg {
+  color: var(--primary-color);
+}
+
+
+.RightRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Todo-Container p,
+.RightRow {
+  cursor: pointer;
+}
+
+.FlexConBTN {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  /* height: 100%; */
+  cursor: pointer;
+}
+
+/* .TodoFormBTN {
+  background-color: #800080;
+  backdrop-filter: blur(10px);
+  color: #fff;
+  border: none;
+  position: absolute;
+  bottom: 10%;
+  padding: 5px 10px;
+  font-size: 1rem;
+  border-radius: 11px;
+  cursor: pointer;
+} */
+
+.FlexConBTN svg {
+  width: 40px;
+  position: absolute;
+  color: var(--btn-add);
+  background-color: var(--btn-add);
+  border-radius: 10px;
+  padding: 1px;
+  bottom: var(--bottom-addTodo);
+}
+
+
+.FlexConBTN svg.fa-plus {
+  color: var(--primary-color);
+}
+
+.TodoForm {
+  width: 100%;
+  background: var(--todo-form);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin: 1rem auto;
+
+  /* top: auto;
+  position: sticky;
+  bottom: 0; */
+
+}
+
+.TodoFormBox {
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  margin: 0 auto;
+  width: auto;
+}
+
+.InputTodo {
+  outline: none;
+  background: var(--btn-form);
+  border: 1px solid var(--btn-form);
+  padding: 10px 16px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  width: 100%;
+  color: #000;
+  border-radius: 1rem;
+}
+
+.InputTodo::placeholder {
+  color: #00000052;
+}
+
+.InputTodo:focus {
+  background: var(--btn-form-focus);
+  border: 1px solid var(--btn-form-focus);
+  color: var(--primary-color);
+}
+
+.ButtonTodo {
+  outline: none;
+  background: var(--btn-form);
+  border: 1px solid var(--btn-form);
+  padding: 10px 16px;
+  margin-top: 5px;
+  margin-bottom: 0;
+  width: 100%;
+  color: #000;
+  border-radius: 1rem;
+  cursor: pointer;
+
+}
+
+.ButtonTodo:hover {
+  background: var(--btn-form-focus);
+  border: 1px solid var(--btn-form-focus);
+  color: var(--secondary-color);
+}
+
+.Todo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #8758ff;
+  color: #fff;
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.fa-trash {
+  margin-left: 0.75rem;
+}
+
+.IconMargin {
+  margin: 0 6px;
+  display: flex;
+  width: 12px;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+.Todo-Container .completed {
+  color: var(--completed);
+  text-decoration: line-through;
+}
+
+/* toggle */
+
+.Dark-Mode {
+  /* margin-left: 10px; */
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.Dark-Mode h1 {
+  position: absolute;
+  right: 0;
+  bottom: -17px;
+}
+
+.Dark-Mode-Lable {
+  width: 65px;
+  height: 30px;
+  position: relative;
+  display: block;
+  background: #ebebeb;
+  border-radius: 200px;
+  box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  transition: 0.3s;
+  /* margin: 0 auto; */
+  z-index: 0;
+}
+
+.Dark-Mode-Lable:after {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  background: linear-gradient(180deg, #ffcc89, #d8860b);
+  border-radius: 180px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+}
+
+.Dark-Mode-Input {
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+
+.Dark-Mode-Input:checked+.Dark-Mode-Lable {
+  background: #242424;
+}
+
+.Dark-Mode-Input:checked+.Dark-Mode-Lable:after {
+  left: 62px;
+  transform: translateX(-100%);
+  background: linear-gradient(180deg, #777, #3a3a3a);
+}
+
+.Dark-Mode-Lable:active:after {
+  width: 30px;
+}
+
+.Dark-Mode-Lable svg {
+  position: absolute;
+  width: 20px;
+  top: 5px;
+  z-index: 100;
+}
+
+.Dark-Mode-Lable svg.sun {
+  left: 5px;
+  fill: #fff;
+  transition: 0.3s;
+}
+
+.Dark-Mode-Lable svg.moon {
+  left: 40px;
+  fill: #7e7e7e;
+  transition: 0.3s;
+}
+
+.Dark-Mode-Input:checked+.Dark-Mode-Lable svg.sun {
+  fill: #7e7e7e;
+}
+
+.Dark-Mode-Input:checked+.Dark-Mode-Lable svg.moon {
+  fill: #fff;
+}
+
+/* Modal */
+
+.Modal-Container {
+  position: fixed;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  z-index: 1;
+}
+
+.Modal-Inner {
+  position: relative;
+  padding: 15px;
+  width: var(--main-width-inner);
+  max-width: 640px;
+  background-color: var(--todo-form);
+  color: #f5f5f5;
+  border-radius: 1rem;
+  box-shadow: 3px 3px 20px var(--shadow);
+}
+
+.Modal-Inner .close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background: transparent;
+  color: var(--primary-color);
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+
+/* code */
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  font-size: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 31px;
+  z-index: 33;
+  cursor: pointer;
+}
+
+/* responsive */
+
+@media only screen and (max-width: 500px) {
+  body {
+    display: block;
+    /* overflow: hidden; */
+    /* height: 100vh; */
+    background-color: var(--bg-color);
+  }
+
+  .TodoWrapper {
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .Content {
+    height: 95vh;
+    width: 100%;
+    margin: 0 auto;
+    overflow-y: visible;
+  }
+
+  .Content::-webkit-scrollbar {
+    width: 7px;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+
+  .Content::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+
+  .Content::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 16px;
+    cursor: pointer;
+  }
+
+  .Content br {
+    display: none;
+  }
+
+  .Content br:last-child {
+    display: block;
+  }
+
+  .FlexConBTN svg {
+    width: 40px;
+    position: fixed;
+    bottom: var(--bottom-addTodo);
+    margin: 8px auto;
+  }
+  
+}
