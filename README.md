@@ -12,6 +12,7 @@ I Make a simple "TodoApp" with React.js.
 > - [ ] Extention for browser
 > - [ ] Cancel button for edit todo task container
 > - [ ] Custom font for persian language
+> - [ ] swipeable-list - left or right swip for tasks :)
 > - [ ] Auto focuse for input in creat todolist task
 > - [ ] Search bar - ex: Search your todo task or something else
 > - [ ] Navbar for completed & not completed (Pending) & all task
