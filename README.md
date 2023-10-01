@@ -8,8 +8,14 @@ I Make a simple "TodoApp" with React.js.
 > - [x] DarkMode
 > - [x] Add, Edit, Delete, Completed(Check)
 > - [x] Responsive For Mobile
+> - [x] PWA - Web Application
 > - [ ] Extention for browser
 > - [ ] Cancel button for edit task box
+> - [ ] Auto focuse for input in creat todolist task
+> - [ ] Search bar - ex: Search your todo task or something else
+> - [ ] Navbar for completed & not completed (Pending) & all task
+> - [ ] ClearAll Button (Delete all task from localstorage or database)
+> - [ ] DataBase instead of localstorage
 
 
 ## Screenshots
