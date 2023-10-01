@@ -29,7 +29,6 @@ I Make a simple "TodoApp" with React.js.
 
 
 ![App Screenshot](https://github.com/amirrahemi01/Basic-TodoApp/blob/main/public/icon.png?raw=true) 
-![image](https://github.com/amirrahemi01/Basic-TodoApp/assets/107685879/db4ce56e-baa1-44b7-9141-e85329078f45)
 
 
 ## Demo
