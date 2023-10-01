@@ -15,6 +15,8 @@ I Make a simple "TodoApp" with React.js.
 > - [ ] Search bar - ex: Search your todo task or something else
 > - [ ] Navbar for completed & not completed (Pending) & all task
 > - [ ] ClearAll Button (Delete all task from localstorage or database)
+> - [ ] Get time, day and put in "Creat ToDo Task"
+> - [ ] By default have some task as local storage
 > - [ ] DataBase instead of localstorage
 > - [ ] Signup & Login 
 
@@ -25,11 +27,12 @@ I Make a simple "TodoApp" with React.js.
   <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TodoApp/main/src/ScreenShot/02.jpg" style="border-radius: 1rem;">
   <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TodoApp/main/src/ScreenShot/03.jpg" style="border-radius: 1rem;">
   <img width="300" src="https://raw.githubusercontent.com/amirrahemi01/Basic-TodoApp/main/src/ScreenShot/04.jpg" style="border-radius: 1rem;">
+  <img width="300" src="https://github.com/amirrahemi01/Basic-TodoApp/blob/main/public/icon.png?raw=true" style="border-radius: 1rem;">
 </div>
 
 
 
-![App Screenshot](https://github.com/amirrahemi01/Basic-TodoApp/blob/main/public/icon.png?raw=true) 
+<!-- ![App Screenshot](https://github.com/amirrahemi01/Basic-TodoApp/blob/main/public/icon.png?raw=true) -->
 
 
 ## Demo
