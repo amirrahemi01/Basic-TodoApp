@@ -8,6 +8,7 @@ I Make a simple "TodoApp" with React.js.
 > - [x] DarkMode
 > - [x] Add, Edit, Delete, Completed(Check)
 > - [x] Responsive For Mobile
+> - [] Extention for browser
 
 ## Screenshots
 <div>
