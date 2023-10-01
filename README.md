@@ -9,6 +9,7 @@ I Make a simple "TodoApp" with React.js.
 > - [x] Add, Edit, Delete, Completed(Check)
 > - [x] Responsive For Mobile
 > - [ ] Extention for browser
+> - [ ] Cancel button for edit task box
 
 
 ## Screenshots
