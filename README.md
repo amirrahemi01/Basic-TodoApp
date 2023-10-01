@@ -15,6 +15,7 @@ I Make a simple "TodoApp" with React.js.
 > - [ ] Search bar - ex: Search your todo task or something else
 > - [ ] Navbar for completed & not completed (Pending) & all task
 > - [ ] ClearAll Button (Delete all task from localstorage or database)
+> - [ ] Show how many task left over - ex: 2 tasks left
 > - [ ] Get time, day and put in "Creat ToDo Task"
 > - [ ] By default have some task as local storage
 > - [ ] DataBase instead of localstorage
