@@ -10,7 +10,7 @@ I Make a simple "TodoApp" with React.js.
 > - [x] Responsive For Mobile
 > - [x] PWA - Web Application
 > - [ ] Extention for browser
-> - [ ] Cancel button for edit task box
+> - [ ] Cancel button for edit todo task container 
 > - [ ] Auto focuse for input in creat todolist task
 > - [ ] Search bar - ex: Search your todo task or something else
 > - [ ] Navbar for completed & not completed (Pending) & all task
