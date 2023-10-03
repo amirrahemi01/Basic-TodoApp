@@ -1,5 +1,4 @@
 :root {
-
   /* Colors */
   --primary-color: #060606;
   --secondary-color: #fff;
@@ -8,17 +7,14 @@
   --heading-color: #292922;
   --bg-color: #E4E5EA;
   --todo-form: #f5f5f5;
-  /* --btn-form: #FFDA02; */
   --btn-form: #ffffff;
   --btn-form-focus: #dadada;
-  /* --btn-add: #FFDA02; */
   --btn-add: #ffffff;
   --scrl-thumb: #a1a1a1;
   --scrl-track: #f1f1f1;
   --shadow: #00000091;
   --completed: #b5b5b5;
   --btn-form-todo: #f00;
-
   --main-width: 375px;
   --main-width-inner: 360px;
   --bottom-addTodo: 0;
@@ -41,10 +37,6 @@
   --completed: #92929280;
   --btn-form-todo: #f00;
 }
-
-/* [device="ios"] {
-  --bottom-addTodo: 0;
-} */
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
@@ -162,7 +154,6 @@ h1 {
   color: var(--primary-color);
 }
 
-
 .RightRow {
   display: flex;
   align-items: center;
@@ -178,22 +169,8 @@ h1 {
   display: flex;
   justify-content: center;
   position: relative;
-  /* height: 100%; */
   cursor: pointer;
 }
-
-/* .TodoFormBTN {
-  background-color: #800080;
-  backdrop-filter: blur(10px);
-  color: #fff;
-  border: none;
-  position: absolute;
-  bottom: 10%;
-  padding: 5px 10px;
-  font-size: 1rem;
-  border-radius: 11px;
-  cursor: pointer;
-} */
 
 .FlexConBTN svg {
   width: 40px;
@@ -216,11 +193,6 @@ h1 {
   border-radius: 1rem;
   padding: 1rem;
   margin: 1rem auto;
-
-  /* top: auto;
-  position: sticky;
-  bottom: 0; */
-
 }
 
 .TodoFormBox {
@@ -264,7 +236,6 @@ h1 {
   color: #000;
   border-radius: 1rem;
   cursor: pointer;
-
 }
 
 .ButtonTodo:hover {
@@ -307,7 +278,6 @@ h1 {
 /* toggle */
 
 .Dark-Mode {
-  /* margin-left: 10px; */
   display: flex;
   flex-direction: row;
   position: relative;
@@ -330,7 +300,6 @@ h1 {
     inset 0px -5px 15px rgba(255, 255, 255, 0.4);
   cursor: pointer;
   transition: 0.3s;
-  /* margin: 0 auto; */
   z-index: 0;
 }
 
@@ -433,25 +402,11 @@ h1 {
   cursor: pointer;
 }
 
-
-/* code */
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-  font-size: 10px;
-  position: absolute;
-  left: 0;
-  bottom: 31px;
-  z-index: 33;
-  cursor: pointer;
-}
-
 /* responsive */
 
 @media only screen and (max-width: 500px) {
   body {
     display: block;
-    /* overflow: hidden; */
-    /* height: 100vh; */
     background-color: var(--bg-color);
   }
 
@@ -470,21 +425,15 @@ code {
   }
 
   .Content::-webkit-scrollbar {
-    width: 7px;
     border-radius: 16px;
-    cursor: pointer;
   }
 
   .Content::-webkit-scrollbar-thumb {
     background-color: transparent;
-    border-radius: 16px;
-    cursor: pointer;
   }
 
   .Content::-webkit-scrollbar-track {
     background-color: transparent;
-    border-radius: 16px;
-    cursor: pointer;
   }
 
   .Content br {
@@ -501,5 +450,4 @@ code {
     bottom: var(--bottom-addTodo);
     margin: 8px auto;
   }
-  
 }
